@@ -1,6 +1,6 @@
-## [Surveillance Station 9.2.0-10854](https://archive.synology.com/download/Package/SurveillanceStation)
+# [Surveillance Station 9.2.0-11289](https://archive.synology.com/download/Package/SurveillanceStation)
 ---
-### 任务计划
+## 任务计划
 - 控制面板 -> 任务计划  
 - 创建 -> 定时任务 -> 用户定义脚本  
 - 常规: 用户 = root，取消选中启用  
@@ -23,15 +23,9 @@
 请使用者在使用本研究成果时，自觉遵守法律法规，并对自己的行为负责。
 
 ---
-### 交流群
-[来源！请尊重版权，此贴仅为搬运和国内加速，请详细阅读原作者的所有信息！](https://github.com/ohyeah521/Surveillance-Station)
-
+[尊重版权，此仓库仅做搬运和国内加速，请点击我阅读原作者的所有信息！](https://github.com/ohyeah521/Surveillance-Station)
 ---
 
-## [Surveillance Station 9.2.0-11289](https://archive.synology.com/download/Package/SurveillanceStation)
-
-
----
 ### x86_64版本
 - [Download](https://global.synologydownload.com/download/Package/spk/SurveillanceStation/9.2.0-11289/SurveillanceStation-x86_64-9.2.0-11289.spk)
 - Script:
