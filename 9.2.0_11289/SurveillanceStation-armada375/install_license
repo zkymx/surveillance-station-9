@@ -1,5 +1,5 @@
 #!/bin/sh
-#bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/install_license)
+#bash <(curl -L https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/install_license)
 
 
 # 屏蔽认证服务器
@@ -32,13 +32,13 @@ sleep 5
 
 
 # 处理每个文件
-process_file /var/packages/SurveillanceStation/target/lib  libssutils.so    https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/libssutils.so     0644
-process_file /var/packages/SurveillanceStation/target/sbin sscmshostd       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/sscmshostd        0755
-process_file /var/packages/SurveillanceStation/target/sbin sscored          https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/sscored           0755
-process_file /var/packages/SurveillanceStation/target/sbin ssdaemonmonitord https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssdaemonmonitord  0755
-process_file /var/packages/SurveillanceStation/target/sbin ssexechelperd    https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssexechelperd     0755
-process_file /var/packages/SurveillanceStation/target/sbin ssroutined       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssroutined        0755
-process_file /var/packages/SurveillanceStation/target/sbin ssmessaged       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssmessaged        0755
+process_file /var/packages/SurveillanceStation/target/lib  libssutils.so    https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/libssutils.so     0644
+process_file /var/packages/SurveillanceStation/target/sbin sscmshostd       https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/sscmshostd        0755
+process_file /var/packages/SurveillanceStation/target/sbin sscored          https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/sscored           0755
+process_file /var/packages/SurveillanceStation/target/sbin ssdaemonmonitord https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssdaemonmonitord  0755
+process_file /var/packages/SurveillanceStation/target/sbin ssexechelperd    https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssexechelperd     0755
+process_file /var/packages/SurveillanceStation/target/sbin ssroutined       https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssroutined        0755
+process_file /var/packages/SurveillanceStation/target/sbin ssmessaged       https://github.com/ohyeah521/Surveillance-Station/raw/main/9.2.0_11289/SurveillanceStation-armada375/ssmessaged        0755
 
 
 sleep 5
