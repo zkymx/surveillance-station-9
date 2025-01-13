@@ -30,7 +30,7 @@
 请使用者在使用本研究成果时，自觉遵守法律法规，并对自己的行为负责。
 
 ---
-## ⚠️⚠️⚠️注意
+## ⚠️⚠️⚠️注意(仅在使用9.2.0_11289时)
 若遇到最新版群晖系统提示“11289与您的Synology NAS不兼容，请上传9.2.1-11320或以上版本”导致无法安装，请执行以下代码，通过SSH或者计划任务执行均可：
 ```
 cp /etc.defaults/synopackageslimit.conf /etc.defaults/synopackageslimit.conf.bak
@@ -45,6 +45,13 @@ sed -i 's/version="9.2.0-11289"/version="99.2.0-11289"/g' /var/packages/Surveill
 ---
 
 #以下为各群晖版本安装包下载地址以及破解脚本
+
+### x86_64版本（⚠️⚠️⚠️新版请尝试该脚本）
+- [安装包](https://global.synologydownload.com/download/Package/spk/SurveillanceStation/9.2.2-11575/SurveillanceStation-x86_64-9.2.2-11575.spk)
+- 破解脚本:
+```
+bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.2-11575/SurveillanceStation-x86_64/install_license)
+```
 
 ### x86_64版本
 - [安装包](https://global.synologydownload.com/download/Package/spk/SurveillanceStation/9.2.0-11289/SurveillanceStation-x86_64-9.2.0-11289.spk)
