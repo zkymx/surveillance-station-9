@@ -50,7 +50,7 @@ sed -i 's/version="9.2.0-11289"/version="99.2.0-11289"/g' /var/packages/Surveill
 - [安装包](https://global.synologydownload.com/download/Package/spk/SurveillanceStation/9.2.2-11575/SurveillanceStation-x86_64-9.2.2-11575.spk)
 - 破解脚本:
 ```
-bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.2-11575/SurveillanceStation-x86_64/install_license)
+bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.2_11575/SurveillanceStation-x86_64/install_license)
 ```
 
 ### x86_64版本
