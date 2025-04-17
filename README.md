@@ -15,7 +15,7 @@ Esta investigación es sólo para investigación académica y aprendizaje técni
 - Instalación de paquetes: [Surveillance Station:](https://global.synologydownload.com/download/Package/spk/SurveillanceStation/9.2.0-11289/SurveillanceStation-armv8-9.2.0-11289.spk)
 - Script de cracking:
 ```
-bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/install_license)
+bash <(curl -L https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/install_license)
 ```
 
 ---
