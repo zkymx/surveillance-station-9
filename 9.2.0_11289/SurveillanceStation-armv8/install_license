@@ -1,8 +1,8 @@
 #!/bin/sh
-#bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/install_license)
+#bash <(curl -L https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/install_license)
 
 
-# 屏蔽认证服务器
+# 1
 if grep -q "synosurveillance.synology.com" /etc/hosts; then
   echo "already blocked license server: synosurveillance.synology.com."
 else
@@ -11,7 +11,7 @@ else
 fi
 
 
-# 定义处理文件的函数
+# 2
 process_file() {
   local dir="$1"
   local file="$2"
@@ -31,14 +31,14 @@ process_file() {
 sleep 5
 
 
-# 处理每个文件
-process_file /var/packages/SurveillanceStation/target/lib  libssutils.so    https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/libssutils.so     0644
-process_file /var/packages/SurveillanceStation/target/sbin sscmshostd       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/sscmshostd        0755
-process_file /var/packages/SurveillanceStation/target/sbin sscored          https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/sscored           0755
-process_file /var/packages/SurveillanceStation/target/sbin ssdaemonmonitord https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/ssdaemonmonitord  0755
-process_file /var/packages/SurveillanceStation/target/sbin ssexechelperd    https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/ssexechelperd     0755
-process_file /var/packages/SurveillanceStation/target/sbin ssmessaged       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/ssmessaged        0755
-process_file /var/packages/SurveillanceStation/target/sbin ssroutined       https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/SurveillanceStation-armv8/ssroutined        0755
+# 3
+process_file /var/packages/SurveillanceStation/target/lib  libssutils.so    https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/libssutils.so     0644
+process_file /var/packages/SurveillanceStation/target/sbin sscmshostd       https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/sscmshostd        0755
+process_file /var/packages/SurveillanceStation/target/sbin sscored          https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/sscored           0755
+process_file /var/packages/SurveillanceStation/target/sbin ssdaemonmonitord https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/ssdaemonmonitord  0755
+process_file /var/packages/SurveillanceStation/target/sbin ssexechelperd    https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/ssexechelperd     0755
+process_file /var/packages/SurveillanceStation/target/sbin ssmessaged       https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/ssmessaged        0755
+process_file /var/packages/SurveillanceStation/target/sbin ssroutined       https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/SurveillanceStation-armv8/ssroutined        0755
 
 
 
