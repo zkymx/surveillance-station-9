@@ -20,7 +20,7 @@ bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/
 
 ---
 ### Efecto de autorización de Crack 60 Licencia
-![License](https://raw.githubusercontent.com/zkymx/Estacion-de-Vigilancia-9.2.0-11289-Synology/refs/heads/main/img/cap.png)
+![License](https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/img/cap.png)
 
 
 
