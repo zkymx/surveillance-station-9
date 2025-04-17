@@ -1,8 +1,8 @@
 #!/bin/sh
-#bash <(curl -L https://gitee.com/christianswift/surveillance-station-9/raw/main/9.2.0_11289/license/remove_license)
+#bash <(curl -L https://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.0_11289/license/remove_license)
 
 
-# 定义一个函数来处理恢复文件操作
+# 1
 process_file() {
   local dir="$1"
   local file="$2"
@@ -11,7 +11,7 @@ process_file() {
 
   cd "$dir" || exit
 
-  # 检查备份文件是否存在
+  # 2
   if [ -e "./$backup" ]; then
     rm "./$file"
     mv "./$backup" "./$file"
@@ -21,7 +21,7 @@ process_file() {
     echo "Error: Backup file $backup does not exist in $dir"
   fi
 }
-# 解除屏蔽认证服务器
+# 3
 unblock_license_server() {
   if grep -q "synosurveillance.synology.com" /etc/hosts; then
     echo "Unblocking license server: synosurveillance.synology.com"
@@ -35,7 +35,7 @@ unblock_license_server() {
 sleep 5
 
 
-# 调用函数处理每个文件
+# 4
 process_file /var/packages/SurveillanceStation/target/lib   libssutils.so     libssutils.so_backup    0644
 process_file /var/packages/SurveillanceStation/target/sbin  sscmshostd        sscmshostd_backup       0755
 process_file /var/packages/SurveillanceStation/target/sbin  sscored           sscored_backup          0755
