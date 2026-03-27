@@ -1,5 +1,4 @@
-#!/bin/sh
-#bash <(curl -L hhttps://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.2_11575/SurveillanceStation-x86_64/install_license)
+#!/bin/shhttps://raw.githubusercontent.com/zkymx/surveillance-station-9/refs/heads/main/9.2.2_11575/SurveillanceStation-x86_64/install_license)
 
 
 # 屏蔽认证服务器
